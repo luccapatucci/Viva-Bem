@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Viva Bem</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../images/logo.png" alt="">
+
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="#"> Perfil</a>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-weight"></i>
+                        <a href="#"> Peso</a>
+                    </li>
+                    <li>
+
+                        <i class="fas fa-ruler-vertical"></i>
+                        <a href="#"> Altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="#">BPM</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-ban"></i> 
+                        <a href="#">Alergias</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i> 
+                        <a href="#">Alimentação</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+
+            </header>
+            <div class="main-content">
+                <div class="panel-row">
+                <button class="panel panel-50" a-view="cadastrarPeso" onclick= "fetchContent (this)"  a-folder="peso">Cadastrar Peso</button>
+                <button class="panel panel-50" a-view="visualizarPeso" onclick= "fetchContent (this)" a-folder="peso">Visualizar Peso</button>
+                </div>
+                <div class="content" id="ajax-content">
+                
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+
+</html>
